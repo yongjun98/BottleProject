@@ -106,7 +106,7 @@ export default function Login(rightContainerProps) {
             <input
               type="email"
               ref={loginEmailInput}
-              // onChange={onChangeInput}
+            // onChange={onChangeInput}
             />
           </div>
         </div>
@@ -134,13 +134,8 @@ export default function Login(rightContainerProps) {
         </button>
       </div>
       <div className="btn_group2">
-        <button className="findEmail_btn">
-          <Link to="/" className="Account">
-            | 이메일 찾기 |
-          </Link>
-        </button>
         <button className="findPassword_btn">
-          <Link to="/" className="Account">
+          <Link to="/FindPassword" className="Account">
             | 비밀번호 찾기 |
           </Link>
         </button>

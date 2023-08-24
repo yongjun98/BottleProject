@@ -14,8 +14,8 @@
     font-family: "DungGeunMo";
     font-weight: bold;
     text-align: left;
-    left: 16%;
-    top: 40%;
+    left: 37%;
+    top: 45%;
     height: 7%;
     width: 30%;
     z-index: 4;
@@ -41,8 +41,8 @@
     font-family: "DungGeunMo";
     font-weight: bold;
     text-align: left;
-    left: 16%;
-    top: 45%;
+    left: 37%;
+    top: 55%;
     height: 7%;
     width: 30%;
     z-index: 4;
@@ -68,8 +68,8 @@
     font-family: "DungGeunMo";
     font-weight: bold;
     text-align: left;
-    left: 16%;
-    top: 50%;
+    left: 37%;
+    top: 65%;
     height: 7%;
     width: 30%;
     z-index: 4;
@@ -86,82 +86,14 @@
     .recv:hover {
       color: #666;
     }
-  }
-  .account_btn1 {
-    display: inline-block;
-    position: absolute;
-    font-size: 140%;
-    font-family: "DungGeunMo";
-    font-weight: bold;
-    text-align: left;
-    right: 13%;
-    top: 40%;
-    height: 7%;
-    width: 30%;
-    z-index: 5;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    .logout {
-      text-decoration: none;
-      color: #ffffff;
-    }
 
-    .logout:hover {
-      color: #666;
-    }
   }
 
-  .account_btn2 {
-    display: inline-block;
-    position: absolute;
-    font-size: 140%;
-    font-family: "DungGeunMo";
-    font-weight: bold;
-    text-align: left;
-    right: 13%;
-    top: 45%;
-    height: 7%;
-    width: 30%;
-    z-index: 6;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    .myAccount {
-      text-decoration: none;
-      color: #ffffff;
-    }
-
-    .myAccount:hover {
-      color: #666;
-    }
+  .account_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
   }
 
-  .account_btn3 {
-    display: inline-block;
-    position: absolute;
-    font-size: 140%;
-    font-family: "DungGeunMo";
-    font-weight: bold;
-    text-align: left;
-    right: 13%;
-    top: 50%;
-    height: 7%;
-    width: 30%;
-    z-index: 7;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    .chgpwd {
-      text-decoration: none;
-      color: #ffffff;
-    }
-
-    .chgpwd:hover {
-      color: #666;
-    }
-  }
 }

@@ -1,125 +1,160 @@
 .bg {
-    background-color: #D3D3D3; /* 배경 색상을 원하는 색상으로 설정 */
+  background-color: #D3D3D3;
+  /* 배경 색상을 원하는 색상으로 설정 */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* 수평 가운데 정렬 */
+  align-items: center;
+
+  /* 수직 가운데 정렬 */
+  .bold-text {
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .Right {
+    //안씀
+    position: absolute;
+    background-color: #A9A9A9;
+    /* 배경 색상을 원하는 색상으로 설정 */
+    width: 50%;
+    height: 60%;
+    bottom: 10%;
+    right: 5%;
+  }
+
+  .Container {
+    //position: absolute;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
-    align-items: center; /* 수직 가운데 정렬 */
-    .bold-text {
-        font-weight: bold;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    height: 100%;
+    outline: solid 5px #808080;
+    border: solid 5px #000000;
+    border-right: solid 10px #505050;
+    border-bottom: solid 10px #000000;
+    background-color: #00017F;
+
+    // overflow: auto; // 내용이 넘칠 경우 스크롤을 생성합니다.
+    position: relative;
+
+
+
+
+
+
+
+    .email {
+
+      width: 100%;
+      height: 10%;
+
+      font-weight: bold;
+      font-family: "DungGeunMo", sans-serif;
+      font-size: 30px;
+      color: white;
+      margin-bottom: 3%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+
+
+    }
+
+    .info {
+
+      width: 100%;
+      height: 70%;
+
+      // display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+
+      position: relative;
+      //float: left;
+      //background-color: #2E2E5E;
+      border-top: 2px dashed #8E8A8A;
+      border-bottom: 2px dashed #8E8A8A;
+
+
+      @media screen and (min-width: 700px) {
+        border-top: 3px dashed #d0d0d0;
+        border-bottom: 3px dashed #d0d0d0;
       }
 
-    .Right { //안씀
-        position: absolute;
-      background-color: #A9A9A9; /* 배경 색상을 원하는 색상으로 설정 */
-      width: 50%;
-      height: 60%;
-      bottom:10%;
-      right: 5%;
+
+      font-family: "DungGeunMo",
+      sans-serif;
+      color: white;
+      font-size: 19px;
+
     }
-      .Container {
-        //position: absolute;
-        width: 100%;
-        height: 100%;
-        outline: solid 5px #808080;
-        border : solid 5px #000000;
-        border-right: solid 10px #505050;
-        border-bottom: solid 10px #000000;
-        background-color: #00017F;
-
-       // overflow: auto; // 내용이 넘칠 경우 스크롤을 생성합니다.
-        position:relative;
 
 
 
+    .click_area {
+      width: 100%;
+      height: 10%;
+      margin-top: 2%;
+      bottom: 0px;
+      display: flex;
+      justify-content: space-between;
 
+      align-items: center; // 버튼을 수직으로 중앙에 정렬
 
+    }
 
+    .logout,
+    .find-pw,
+    .back-button {
+      cursor: pointer;
+      width: calc(33.33% - 5px);
+      /* 3개 버튼이므로 1/3로 나눈 너비 */
+      text-align: center;
+      font-weight: bold;
+      font-family: "DungGeunMo", sans-serif;
+      font-size: 20px;
+      color: #8E8A8A;
 
-        .email{
-
-            width: 100%;
-            height: 10%;
-
-            font-weight: bold;
-            font-family: "DungGeunMo", sans-serif;
-            font-size: 30px;
-            color: white;
-            margin-bottom:3%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-
-
-            
-        }
-        .info{
-
-            width: 100%;
-            height:70%;
-
-           // display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-
-            
-            position: relative;
-            //float: left;
-            //background-color: #2E2E5E;
-            border-top: 2px dashed #8E8A8A;
-            border-bottom: 2px dashed #8E8A8A;
-          
-          
-            @media screen and (min-width: 700px) {
-              border-top: 3px dashed #d0d0d0;
-              border-bottom: 3px dashed #d0d0d0;
-            }
-    
-            
-            font-family: "DungGeunMo", sans-serif;
-            color: white;
-            font-size: 19px;
-          
-        }
-
-
-
-        .click_area {
-            width:100%;
-            height: 10%;
-            margin-top: 2%;
-            bottom:0px;
-            display: flex;
-            justify-content: space-between;
-
-            align-items: center; // 버튼을 수직으로 중앙에 정렬
-            
-        }
-        
-        .logout,
-        .find-pw,
-        .back-button {
-            cursor: pointer;
-            width: calc(33.33% - 5px); /* 3개 버튼이므로 1/3로 나눈 너비 */
-            text-align: center;
-            font-weight: bold;
-            font-family: "DungGeunMo", sans-serif;
-            font-size: 20px;
-            color: #8E8A8A;
-            &:hover {
-                background-color: #e0e0e0;
-            }
-        }
-
-
-
-
+      &:hover {
+        background-color: #e0e0e0;
       }
     }
-  
+
+    .back_btn {
+      display: inline-block;
+      position: absolute;
+      font-size: 140%;
+      font-family: "DungGeunMo";
+      font-weight: bold;
+      left: 4%;
+      top: 89%;
+      right: 9%;
+      height: 8%;
+      width: 20%;
+      z-index: 4;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      .back {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      .back:hover {
+        color: #666;
+      }
+    }
+
+
+  }
+}

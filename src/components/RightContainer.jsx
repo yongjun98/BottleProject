@@ -16,6 +16,7 @@ import ChgPassword from '../pages/ChgPassword';
 import ChatDetail from "../pages/ChatDetail";
 //import Temp from '../pages/Temp';
 import Setting from '../pages/Setting';
+import FindPassword from '../pages/FindPassword';
 export default function RightContainer() {
   const [component, setComponent] = useState();
   const alertBox = useRef(null);
@@ -111,8 +112,16 @@ export default function RightContainer() {
                     element={<ChgPassword {...rightContainerProps} />}
                   />
                   <Route
-                      path="/ChatDetail"
-                      element={<ChatDetail {...rightContainerProps} />}
+                    path="/ChatDetail"
+                    element={<ChatDetail {...rightContainerProps} />}
+                  />
+                  <Route
+                    path="/FindPassword"
+                    element={<FindPassword {...rightContainerProps} />}
+                  />
+                  <Route
+                    path="/Setting"
+                    element={<Setting {...rightContainerProps} />}
                   />
                   <Route path="/Temp" element={<Setting />} />
                 </Routes>

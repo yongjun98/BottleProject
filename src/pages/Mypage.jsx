@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import '../style/mypage.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { RiSettings3Fill } from "react-icons/ri";
+
 
 export default function Mypage(rightContainerProps) {
   const authCheck = async function () {
@@ -40,7 +42,7 @@ export default function Mypage(rightContainerProps) {
       {/*<div className="text_box3"></div>*/}
       {/*<div className="text_line1"></div>*/}
       {/*<div className="text_line2"></div>*/}
-      <div className="category_box1" style={{ left: '15%', top: '30%' }}>
+      <div className="category_box1" style={{ left: '35%', top: '30%' }}>
         소통
       </div>
       <button className="communi_btn1">
@@ -59,24 +61,12 @@ export default function Mypage(rightContainerProps) {
         </Link>
       </button>
 
-      <div className="category_box2" style={{ left: '55%', top: '30%' }}>
-        계정
+      <div style={{ position: 'absolute', top: '15px', right: '20px' }}>
+        {/* 아이콘을 눌렀을 때 /target 페이지로 이동 */}
+        <Link to="/Setting" className="account_icon">
+          <RiSettings3Fill size={80} color="white" />
+        </Link>
       </div>
-      <button className="account_btn1" onClick={logout}>
-        <div to="/logout" className="logout">
-          ㅤ 4. 로그아웃
-        </div>
-      </button>
-      <button className="account_btn2">
-        <Link to="/TEMP" className="myAccount">
-          ㅤ 5. 내정보
-        </Link>
-      </button>
-      <button className="account_btn3">
-        <Link to="/chgPassword" className="chgpwd">
-          ㅤ 6. 비밀번호 변경
-        </Link>
-      </button>
     </div>
   );
 }
